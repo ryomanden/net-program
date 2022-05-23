@@ -1,0 +1,3 @@
+PS G:\My Drive\study\net-pro\02> ./a .out
+sum is 7262
+PS G:\My Drive\study\net-pro\02>

@@ -1,0 +1,3 @@
+PS G:\My Drive\study\net-pro\02> ./a .out
+max is 54213
+PS G:\My Drive\study\net-pro\02>

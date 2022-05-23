@@ -1,0 +1,18 @@
+ryo_mitsuda@RyonoMacBook-Air 04 % ./a.out
+--- apple ---
+Apple
+>>MISS
+apple
+>>OK
+
+--- banana ---
+banana
+>>OK
+
+--- orange ---
+orabgee
+>>MISS
+orange
+>>OK
+
+ryo_mitsuda@RyonoMacBook-Air 04 %

@@ -1,0 +1,2 @@
+PS G:\My Drive\study\net-pro\03> ./a .out
+35.260000

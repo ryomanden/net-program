@@ -1,0 +1,12 @@
+PS G:\My Drive\study\net-pro\03> ./a .out
+Pls input: 1900
+1900 -> Not Uruu desu
+PS G:\My Drive\study\net-pro\03> ./a .out
+Pls input: 2000
+2000 -> Uruu desu
+PS G:\My Drive\study\net-pro\03> ./a .out
+Pls input: 2019
+2019 -> Not Uruu desu
+PS G:\My Drive\study\net-pro\03> ./a .out
+Pls input: 2020
+2020 -> Uruu desu

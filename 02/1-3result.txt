@@ -1,0 +1,5 @@
+PS G:\My Drive\study\net-pro\02> ./a .out      
+min is 1
+max is 54213
+sum is 54305
+PS G:\My Drive\study\net-pro\02>

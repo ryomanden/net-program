@@ -1,0 +1,6 @@
+ryo_mitsuda@RyonoMacBook-Air 04 % ./a.out
+a?:100
+b?:44
+[before] a=100, b=44
+[after] a=44, b=100
+ryo_mitsuda@RyonoMacBook-Air 04 %
