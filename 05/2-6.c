@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-void myver(double data[], int end) {
+int myver(double data[], int end) {
     double ave, sigma = 0;
 
     /*--- calculate average ---*/
@@ -26,22 +26,24 @@ int main(){
     int end;
     FILE *fp;
 
-    fp = fopen("./data.txt", "r");
+    fp = fopen("./data.win.txt", "r");
     if (fp == NULL) {
         fprintf(stderr, "Cannot open file\n");
         return -1;
     }
-    fclose(fp);
+    
 
     fscanf(fp, "%d", &end);
-    data = (double *)malloc(sizeof(double)*end);
-    for(int i = 0, i < end, i++) {
+    printf("%d", end);
+
+    data = (double *)malloc(sizeof(int)*end);
+    for(int i = 0; i < end; i++) {
         fscanf(fp, "%lf", data[i]);
     }
 
     /*--- output ---*/
     printf("%lf", myver(data, end));
-
+    fclose(fp);
     free(data);
     return 0;
 }
