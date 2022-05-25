@@ -12,7 +12,7 @@ int main(void) {
     strcat(str3,str1);
     strcat(str3,of);
     strcat(str3,str2);
-    printf(str3);
+    printf("%s",str3);
 
     /*--- sprintf ---*/
     sprintf(str4, "%s of %s", str1, str2);
