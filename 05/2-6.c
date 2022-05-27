@@ -26,7 +26,7 @@ int main(){
     int end;
     FILE *fp;
 
-    fp = fopen("./data.win.txt", "r");
+    fp = fopen("./data.mac.txt", "r");
     if (fp == NULL) {
         fprintf(stderr, "Cannot open file\n");
         return -1;
@@ -34,11 +34,9 @@ int main(){
     
 
     fscanf(fp, "%d", &end);
-    printf("%d", end);
-
-    data = (double *)malloc(sizeof(int)*end);
+    data = (double *)malloc(sizeof(double)*end);
     for(int i = 0; i < end; i++) {
-        fscanf(fp, "%lf", data[i]);
+        fscanf(fp, "%lf", &data[i]);
     }
 
     /*--- output ---*/
