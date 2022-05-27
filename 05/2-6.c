@@ -18,30 +18,33 @@ int myver(double data[], int end) {
     }
 
     sigma = sigma / end;
+
     return sigma;
 }
 
-int main(){
+int main() {
     double *data;
     int end;
     FILE *fp;
 
-    fp = fopen("./data.mac.txt", "r");
+    /*--- file open ---*/
+    fp = fopen("./data.win.txt", "r");
     if (fp == NULL) {
         fprintf(stderr, "Cannot open file\n");
         return -1;
     }
     
-
     fscanf(fp, "%d", &end);
-    data = (double *)malloc(sizeof(double)*end);
+    data = (double *)malloc(sizeof(int)*end);
+
     for(int i = 0; i < end; i++) {
-        fscanf(fp, "%lf", &data[i]);
+        fscanf(fp, "%lf", data[i]);
     }
 
     /*--- output ---*/
-    printf("%lf", myver(data, end));
+    printf("%d", myver(data, end));
     fclose(fp);
     free(data);
+
     return 0;
 }
