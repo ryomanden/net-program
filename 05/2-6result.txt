@@ -1,0 +1,3 @@
+net-program/05 on  main [!?] via C v13.1.6-clang
+❯ ./a.out
+3.553332

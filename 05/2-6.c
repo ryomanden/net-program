@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int myver(double data[], int end) {
+double myver(double data[], int end) {
     double ave, sigma = 0;
 
     /*--- calculate average ---*/
@@ -13,10 +13,8 @@ int myver(double data[], int end) {
 
     /*--- calculate sigma ---*/
     for (int i = 0; i < end; i++) {
-        sigma += (data[i] - ave);
-        sigma = pow(sigma,2);
+        sigma += pow((data[i] - ave),2);
     }
-
     sigma = sigma / end;
 
     return sigma;
@@ -28,21 +26,21 @@ int main() {
     FILE *fp;
 
     /*--- file open ---*/
-    fp = fopen("./data.win.txt", "r");
+    fp = fopen("./data.mac.txt", "r");
     if (fp == NULL) {
         fprintf(stderr, "Cannot open file\n");
         return -1;
     }
     
     fscanf(fp, "%d", &end);
-    data = (double *)malloc(sizeof(int)*end);
+    data = (double *)malloc(sizeof(double)*end);
 
     for(int i = 0; i < end; i++) {
-        fscanf(fp, "%lf", data[i]);
+        fscanf(fp, "%lf", &data[i]);
     }
 
     /*--- output ---*/
-    printf("%d", myver(data, end));
+    printf("%f\n", myver(data, end));
     fclose(fp);
     free(data);
 

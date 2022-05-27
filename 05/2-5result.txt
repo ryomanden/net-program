@@ -1,0 +1,10 @@
+net-program/05 on  main [!?] via C v13.1.6-clang took 2s
+❯ ./a.out
+seed> 4325
+Better luck
+
+net-program/05 on  main [!?] via C v13.1.6-clang
+❯ ./a.out
+seed> 777
+Good luck
+
