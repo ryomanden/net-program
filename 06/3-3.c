@@ -63,7 +63,7 @@ int main(void) {
         /*--- (E) enemy's turn ---*/
         X = (rand() % 41 + 10);
         p.ENERGY -= X;
-        printf("A monster attacked! You received %d damage!", X);
+        printf("A monster attacked! You received %d damage!\n", X);
 
         if(p.ENERGY <= 0) {
         printf("\n\n....GAME OVER....\n\n");
