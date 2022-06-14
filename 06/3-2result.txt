@@ -1,0 +1,5 @@
+PS C:\Users\Ryo Mitsuda\github\net-program\06> ./a.exe
+a = 7168
+b = 5632
+
+GCD = 512

@@ -1,0 +1,244 @@
+PS C:\Users\Ryo Mitsuda\github\net-program\06> ./a.exe
+seed? >> 3214
+
+A monster appears!
+
+--- Your status ---
+ENERGY: 300
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 1
+
+You attacked! A monster received 29 damage!
+A monster attacked! You received 17 damage!
+
+--- Your status ---
+ENERGY: 283
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 1
+
+You attacked! A monster received 43 damage!
+A monster attacked! You received 32 damage!
+
+--- Your status ---
+ENERGY: 251
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 1
+
+You attacked! A monster received 43 damage!
+A monster attacked! You received 13 damage!
+
+--- Your status ---
+ENERGY: 238
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 1
+
+You attacked! A monster received 32 damage!
+A monster attacked! You received 14 damage!
+
+--- Your status ---
+ENERGY: 224
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 1
+
+You attacked! A monster received 40 damage!
+A monster attacked! You received 12 damage!
+
+--- Your status ---
+ENERGY: 212
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 1
+
+You attacked! A monster received 10 damage!
+A monster attacked! You received 10 damage!
+
+--- Your status ---
+ENERGY: 202
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 2
+
+You recovered 50 energy!
+A monster attacked! You received 50 damage!
+
+--- Your status ---
+ENERGY: 202
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 1
+
+You attacked! A monster received 19 damage!
+
+
+....GAME CLEAR!....
+
+PS C:\Users\Ryo Mitsuda\github\net-program\06> ./a.exe
+seed? >> 4231
+
+A monster appears!
+
+--- Your status ---
+ENERGY: 300
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 38 damage!
+
+--- Your status ---
+ENERGY: 262
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 10 damage!
+
+--- Your status ---
+ENERGY: 252
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 43 damage!
+
+--- Your status ---
+ENERGY: 209
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 39 damage!
+
+--- Your status ---
+ENERGY: 170
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 14 damage!
+
+--- Your status ---
+ENERGY: 156
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 29 damage!
+
+--- Your status ---
+ENERGY: 127
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 14 damage!
+
+--- Your status ---
+ENERGY: 113
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 19 damage!
+
+--- Your status ---
+ENERGY: 94
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 14 damage!
+
+--- Your status ---
+ENERGY: 80
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 34 damage!
+
+--- Your status ---
+ENERGY: 46
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 22 damage!
+
+--- Your status ---
+ENERGY: 24
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 18 damage!
+
+--- Your status ---
+ENERGY: 6
+POISON: 0
+-------------------
+
+Command? -> 1:Attack 2:Heal 3:Cure Poison
+>> 3
+
+Your poison was cured!
+A monster attacked! You received 21 damage!
+
+....GAME OVER....

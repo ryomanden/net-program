@@ -55,7 +55,7 @@ int main(void) {
                 printf("\nMiss!\n");
         }
 
-        if(m.ENERGY <= 0) {
+        if(m.ENERGY <= 0) { //--------------------GAME CLEAR
             printf("\n\n....GAME CLEAR!....\n\n");
             break;
         }
@@ -65,7 +65,7 @@ int main(void) {
         p.ENERGY -= X;
         printf("A monster attacked! You received %d damage!", X);
 
-        if(p.ENERGY <= 0) {
+        if(p.ENERGY <= 0) { //--------------------GAME OVER
         printf("\n\n....GAME OVER....\n\n");
         break;
         }
@@ -83,7 +83,7 @@ int main(void) {
             
         }
 
-        if(p.ENERGY <= 0) {
+        if(p.ENERGY <= 0) { //--------------------GAME OVER 
             printf("\n\n....GAME OVER....\n\n");
             break;
         }

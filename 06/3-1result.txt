@@ -1,0 +1,21 @@
+PS C:\Users\Ryo Mitsuda\github\net-program\06> ./a.exe
+
+Gakuban 1 : 2132991
+Math 1    : 70
+English 1 : 80
+Physics 1 : 95
+
+Gakuban 2 : 2132992
+Math 2    : 60
+English 2 : 65
+Physics 2 : 85
+
+Gakuban 3 : 2132993
+Math 3    : 85
+English 3 : 95
+Physics 3 : 55
+
+--- Heikin ---
+2132991 : 81.666664
+2132992 : 70.000000
+2132993 : 78.333336
