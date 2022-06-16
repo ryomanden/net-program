@@ -1,0 +1,6 @@
+PS C:\Users\Ryo Mitsuda\github\net-program\07> ./a.exe
+Search Gakuban?:2132776
+Heikin = 78.333336
+PS C:\Users\Ryo Mitsuda\github\net-program\07> ./a.exe
+Search Gakuban?:2132667
+2132667 is not found.

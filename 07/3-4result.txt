@@ -1,0 +1,6 @@
+PS C:\Users\Ryo Mitsuda\github\net-program\07> ./a.exe
+Search Number?:9
+9 is found in data[3].
+PS C:\Users\Ryo Mitsuda\github\net-program\07> ./a.exe
+Search Number?:11
+11 is not found.

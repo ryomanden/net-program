@@ -8,12 +8,12 @@ int Bsearch(int size, int n );
 int main(){
     int a, n;
     float heikin;
-    int size = 20;
+    int size = 20;// <------
     struct gakuseki ns_2nen[size];
 
     /* open file */
     FILE *fp;
-    fp = fopen("gakusei.mac.txt","r");
+    fp = fopen("./gakusei.win.txt","r");
 
     /* file error */
     if(fp == NULL){
@@ -42,15 +42,21 @@ int main(){
             a = center;
             break;
         }else if(ns_2nen[center].gakuban > n){
-            printf("\n%d > %d\n", ns_2nen[center].gakuban,n);
             size = center - 1;
         }else{
-            printf("\n%d < %d\n", ns_2nen[center].gakuban,n);
             start = center + 1;
         }
     } 
     /* calc average */
     heikin = ((float)ns_2nen[a].math + (float)ns_2nen[a].eng + (float)ns_2nen[a].phy)/3;
-    printf("Heikin = %f", heikin);
+
+    /* output result */
+    if(ns_2nen[a].gakuban == n){
+        printf("Heikin = %f", heikin);
+    }
+    else{
+        printf("%d is not found.\n", n);
+    }
 }
+    
 
