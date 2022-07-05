@@ -19,12 +19,12 @@ int main(void){
     /*--- 宣言 ---*/
     int* data;
     int size = SIZE;
-    int i, j, tmp, seed, min, k;
-    unsigned long int average;
+    int i, j, tmp, seed;
+    unsigned long int result[10][10];
 
     /*--- CSV ---*/
     FILE *fp;
-    fp = fopen("./s_result.csv", "w");
+    fp = fopen("./i_result.csv", "w");
     if(fp == NULL) {
         printf( "File open ERROR Deesu" );
         return -1;
@@ -51,25 +51,26 @@ int main(void){
 
             start = clock(); /* 処理前の時間を取得 */
 
-            /* select sort */
-            for(i=0; i < (size-1); i++) {
-                min = data[i];
-                k = i;
-                for(j = (i+1); j < size; j++) {
-                    if(min > data[j]) {
-                        min = data[j];
-                        k = j;
+            /* insert sort */
+            for( i = 1; i < size; i++ ) {
+                tmp = data[i];
+
+                for( j = (i-1); j >= 0; j-- ) {
+
+                    if( data[j] > tmp ) {
+                        data[j+1] = data[j];
+                    }else{
+                        break;
                     }
                 }
-                tmp = data[i];
-                data[i] = data[k];
-                data[k] = tmp;
+
+                data[j+1] = tmp;
             }
 
             end = clock(); /* 処理後の時間を取得 */
             elapsed = end - start; /* 実行時間算出 */
             printf("ELAPSED TIME %d: %lu\n", (loop+1), elapsed);
-            
+
             result[loop][all] = elapsed;
             free(data); /*--- 配列けす ---*/
         }
@@ -79,10 +80,9 @@ int main(void){
         if(all < 10) {
             fprintf(fp, ",");
         }
-
         size += SIZE;
     }
-    
+
     /*--- Push to CSV ---*/
     for(int i = 0; i < 10; i++) {
         fprintf(fp, "\n%d,",(i+1));
@@ -93,7 +93,6 @@ int main(void){
             }
         }
     }
-
     fclose(fp);
     return 0; 
 }
