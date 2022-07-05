@@ -20,7 +20,7 @@ int main(void){
     int* data;
     int size = SIZE;
     int i, j, tmp, seed;
-    unsigned long int average;
+    unsigned long int result[10][10];
 
     /*--- CSV ---*/
     FILE *fp;
@@ -29,10 +29,10 @@ int main(void){
         printf( "File open ERROR Deesu" );
         return -1;
     }
-    /*--- TABLE NAME ---*/
-    fprintf(fp, "Number of sorts,1/%lu[s]\n",CLOCKS_PER_SEC);
 
     printf("%lu Clocks per sec\n", CLOCKS_PER_SEC);
+
+    fprintf(fp, ",");
 
     /*--- Set SEED ---*/
     printf("Seed?=");
@@ -40,7 +40,6 @@ int main(void){
     srand(seed);
 
     for(int all = 0; all < 10; all++) {
-        average = 0;
         printf("---- data size = %d\n", size);
         for(int loop = 0; loop < 10; loop++) {
 
@@ -66,18 +65,31 @@ int main(void){
             end = clock(); /* 処理後の時間を取得 */
             elapsed = end - start; /* 実行時間算出 */
             printf("ELAPSED TIME %d: %lu\n", (loop+1), elapsed);
-            
-            average += elapsed;
 
+            result[loop][all] = elapsed;
             free(data); /*--- 配列けす ---*/
         }
 
-        /*--- Calc Average && Push to CSV ---*/
-        average = average / 10;
-        fprintf(fp, "%d,%lu\n", size, average);
-        
+        /*--- TABLE NAME ---*/
+        fprintf(fp, "%d",size);
+        if(all < 10) {
+            fprintf(fp, ",");
+        }
+
         size += SIZE;
     }
+
+    /*--- Push to CSV ---*/
+    for(int i = 0; i < 10; i++) {
+        fprintf(fp, "\n%d,",(i+1));
+        for(int j = 0; j < 10; j++) {
+            fprintf(fp, "%lu",result[i][j]);
+            if(j < 10) {
+                fprintf(fp, ",");
+            }
+        }
+    }
+
     fclose(fp);
     return 0; 
 }
