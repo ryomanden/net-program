@@ -13,11 +13,14 @@ int main(void){
     
     unsigned long int start; /* 実行前の時間(ミリ秒)*/
     unsigned long int end; /* 実行後の時間(ミリ秒)*/
-    unsigned long int elapsed; /* 実行時間(ミリ秒)*/
+    unsigned  long int elapsed; /* 実行時間(ミリ秒)*/
 
     int data[SIZE];
     int size = SIZE;
     int i, j, tmp, min, k;
+    
+    tmp = size;
+
     printf("<--- SELECT SORT --->\n");
     for(int loop = 0; loop < 10; loop++) {
         /*--- DAINYU- ---*/
