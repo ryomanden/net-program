@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define SIZE 1000
+#define SIZE 1500
 
 void output( int data[], int size ){
     int i;
@@ -20,6 +20,7 @@ int main(void){
     int* data;
     int size = SIZE;
     int i, j, tmp, seed;
+    unsigned long int average;
 
     /*--- CSV ---*/
     FILE *fp;
@@ -28,16 +29,19 @@ int main(void){
         printf( "File open ERROR Deesu" );
         return -1;
     }
+    /*--- TABLE NAME ---*/
+    fprintf(fp, "Number of sorts,1/%lu[s]\n",CLOCKS_PER_SEC);
 
-    fprintf(fp, "data,number,time(1/%lu[s])\n",CLOCKS_PER_SEC);
+    printf("%lu Clocks per sec\n", CLOCKS_PER_SEC);
 
-    printf("\n %lu \n", CLOCKS_PER_SEC);
-
+    /*--- Set SEED ---*/
     printf("Seed?=");
     scanf("%d", &seed);
     srand(seed);
-    for(int all = 0; all < 10; all++) {
 
+    for(int all = 0; all < 10; all++) {
+        average = 0;
+        printf("---- data size = %d\n", size);
         for(int loop = 0; loop < 10; loop++) {
 
             /*--- データつくる ---*/
@@ -63,12 +67,16 @@ int main(void){
             elapsed = end - start; /* 実行時間算出 */
             printf("ELAPSED TIME %d: %lu\n", (loop+1), elapsed);
             
-            free(data);
+            average += elapsed;
+
+            free(data); /*--- 配列けす ---*/
         }
-        fprintf(fp, "%d,%d,%lu\n", size, (loop+1), elapsed);
-        free(data);
+
+        /*--- Calc Average && Push to CSV ---*/
+        average = average / 10;
+        fprintf(fp, "%d,%lu\n", size, average);
+        
         size += SIZE;
-        printf("\n--------\n");
     }
     fclose(fp);
     return 0; 
