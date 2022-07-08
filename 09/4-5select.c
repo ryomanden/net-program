@@ -20,7 +20,7 @@ int main(void){
     int* data;
     int size = SIZE;
     int i, j, tmp, seed, min, k;
-    unsigned long int average;
+    unsigned long int result[10][10];
 
     /*--- CSV ---*/
     FILE *fp;
