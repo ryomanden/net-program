@@ -89,7 +89,7 @@ int main(void){
             }
         }
     }
-
+    printf("\n%lu",CLOCKS_PER_SEC);
     fclose(fp);
     return 0; 
 }
